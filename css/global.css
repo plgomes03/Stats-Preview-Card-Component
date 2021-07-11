@@ -1,0 +1,27 @@
+html {
+    font-size: 15px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090b1a;
+}
+
+main {
+    width: 100%;
+}
+
+.card {
+    margin: 180px auto;
+    width: 100%;
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    max-height: 446px;
+}

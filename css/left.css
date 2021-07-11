@@ -1,0 +1,54 @@
+/*left side of the card*/
+
+.left {
+    background-color: #1b1938;
+    padding: 0 0 66px 72px;
+    max-height: 446px;
+    font-family: 'Inter', sans-serif;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+h1 {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 2.4rem;
+    /*margin: 78px 122px 0px 72px*/;
+    margin-top: 78px;
+    max-width: 400px;
+}
+
+.content p {
+    color: #ffffffbf;
+    font-size: 1rem;
+    font-weight: 400;
+    /*margin: 34px 0 0 72px*/;
+    margin-top: 34px;
+    /*margin-bottom: 80px;*/
+    max-width: 360px;
+}
+
+span {
+    color: #aa5cdb;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h2 {
+    /*margin-left: 72px;*/
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-top: 80px;
+}
+
+.stats p {
+    /*margin-left: 72px;*/
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ffffff99;
+    margin-top: -10px;
+    font-size: 1rem;
+}
