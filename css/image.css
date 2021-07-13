@@ -1,0 +1,49 @@
+.image {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    max-height: 446px;
+    background-image: url(/images/image-header-desktop.jpg);
+    background-size: cover;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    flex: 1 1 auto;
+}
+
+
+
+
+
+/*
+################# Mobile ##############################
+*/
+@media only screen and (min-width:375px) and (max-width:540px) {
+    .image {
+        max-width: 330px;
+        min-height: 240px;
+        background-image: url(/images/image-header-mobile.jpg);
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 0;
+        flex: 1 1 auto;
+    }
+}
+
+
+
+
+
+/*
+################# Tablets, IPad... ##############################
+*/
+@media only screen and (min-width:540px) and (max-width:768px) {
+    .image {
+        max-width: 628px;
+        min-height: 420px;
+        background-image: url(/images/image-header-mobile.jpg);
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 0;
+        flex: 1 1 auto;
+    }
+}

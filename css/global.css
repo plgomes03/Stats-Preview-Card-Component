@@ -1,4 +1,5 @@
 html {
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
 }
 
@@ -20,8 +21,46 @@ main {
     margin: 180px auto;
     width: 100%;
     max-width: 1110px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     height: auto;
     max-height: 446px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+span {
+    color: #aa5cdb;
+}
+
+
+
+
+/*
+################# Mobile ##############################
+*/
+@media only screen and (min-width:375px) and (max-width:540px) {
+    .card {
+        margin: 88px auto;
+        max-width: 330px;
+        max-height: none;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/*
+################# Tablets, IPad... ##############################
+*/
+@media only screen and (min-width:540px) and (max-width:768px) {
+    .card {
+        margin: 88px auto;
+        max-width: 628px;
+        max-height: none;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
 }
