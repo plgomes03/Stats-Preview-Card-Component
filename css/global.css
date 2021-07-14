@@ -1,3 +1,6 @@
+/*Global styles*/
+/*################# Desktop and laptops ##############################*/
+
 html {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
@@ -10,19 +13,23 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     background-color: #090b1a;
 }
 
+/*How to center using flexbox*/
 main {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    margin: 180px auto;
-    width: 100%;
-    max-width: 1110px;
-    height: auto;
-    max-height: 446px;
+    min-width: 1024px;
+    min-height: 446px;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -34,14 +41,23 @@ span {
 
 
 
-/*
-################# Mobile ##############################
-*/
-@media only screen and (min-width:375px) and (max-width:540px) {
+
+
+
+
+
+
+/*############################ Mobile ##############################*/
+/*Cellphones*/
+@media only screen and (min-width:375px) and (max-width:539px) {
+    main {
+        height: auto;
+        padding: 5% 0;
+    }
+
     .card {
-        margin: 88px auto;
-        max-width: 330px;
-        max-height: none;
+        min-width: 330px;
+        min-height: auto;
         flex-flow: column-reverse;
         text-align: center;
     }
@@ -51,15 +67,16 @@ span {
 
 
 
-
-/*
-################# Tablets, IPad... ##############################
-*/
+/*IPad, Surface Duo, Tablets...*/
 @media only screen and (min-width:540px) and (max-width:768px) {
+    main {
+        height: auto;
+        padding: 10% 0;
+    }
+
     .card {
-        margin: 88px auto;
-        max-width: 628px;
-        max-height: none;
+        min-width: 500px;
+        min-height: auto;
         flex-flow: column-reverse;
         text-align: center;
     }

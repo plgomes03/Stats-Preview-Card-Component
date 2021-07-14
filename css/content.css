@@ -1,8 +1,8 @@
+/*################# Desktop and laptops ##############################*/
+
 .content {
     background-color: #1b1938;
-    padding: 0 0px 66px 72px;
-    max-height: 446px;
-    max-width: 570px;
+    padding: 0 5%;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     flex: 1 1 auto;
@@ -15,6 +15,7 @@ h1 {
     margin-top: 78px;
     max-width: 378px;
 }
+
 .text p {
     color: #ffffffbf;
     font-size: 1rem;
@@ -25,16 +26,18 @@ h1 {
 
 .stats {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     max-width: 350px;
     margin-top: 80px;
 }
+
 h2 {
     font-weight: 700;
     color: #ffffff;
     font-size: 1.4rem;
 }
+
 .stats p {
     font-family: 'Lexend Deca', sans-serif;
     color: #ffffff99;
@@ -45,28 +48,37 @@ h2 {
 
 
 
-/*
-################# Mobile ##############################
-*/
-@media only screen and (min-width:375px) and (max-width:540px) {
+
+
+
+
+
+
+
+
+
+/*############################ Mobile ##############################*/
+/*Cellphones*/
+@media only screen and (min-width:375px) and (max-width:539px) {
     .content {
-        padding: 0 0 38px 36px;
         max-height: none;
-        max-width: 330px;
+        min-width: 330px;
         border-top-left-radius: 0;
         border-bottom-right-radius: 12px;
         border-bottom-left-radius: 12px;
-        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 
     h1 {
         margin-top: 46px;
-        max-width: 260px;
+        max-width: 330px;
     }
 
     .text p {
         margin-top: 24px;
-        max-width: 256px;
+        max-width: 330px;
     }
 
     .stats {
@@ -74,8 +86,8 @@ h2 {
         flex-flow: column wrap;
         align-content: center;
         align-items: center;
-        max-width: 256px;
-        margin-top: 0;        
+        max-width: 330px;
+        margin-top: 0;
     }
 }
 
@@ -85,36 +97,35 @@ h2 {
 
 
 
-/*
-################# Tablets, IPad... ##############################
-*/
+/*IPad, Surface Duo, Tablets...*/
 @media only screen and (min-width:540px) and (max-width:768px) {
     .content {
-        padding: 0 0 38px 0;
         max-height: none;
-        max-width: 628px;
+        min-width: 500px;
         border-top-left-radius: 0;
         border-bottom-right-radius: 12px;
         border-bottom-left-radius: 12px;
-        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
         align-content: center;
     }
 
     h1 {
         margin-top: 46px;
-        max-width: 628px;
+        max-width: 500px;
     }
 
     .text p {
         margin-top: 24px;
         max-width: 500px;
-        margin-left: 80px;
     }
 
     .stats {
         display: flex;
         flex-flow: column wrap;
-        max-width: 628px;
-        margin-top: 0;        
+        align-content: center;
+        align-items: center;
+        max-width: 500px;
+        margin-top: 0;
     }
 }
