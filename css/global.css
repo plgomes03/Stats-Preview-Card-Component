@@ -1,4 +1,8 @@
+/*Global styles*/
+/*################# Desktop and laptops ##############################*/
+
 html {
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
 }
 
@@ -9,19 +13,71 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     background-color: #090b1a;
 }
 
+/*How to center using flexbox*/
 main {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    margin: 180px auto;
-    width: 100%;
-    max-width: 1110px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: auto;
-    max-height: 446px;
+    min-width: 1024px;
+    min-height: 446px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+span {
+    color: #aa5cdb;
+}
+
+
+
+
+
+
+
+
+
+
+/*############################ Mobile ##############################*/
+/*Cellphones*/
+@media only screen and (min-width:375px) and (max-width:539px) {
+    main {
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .card {
+        min-width: 330px;
+        min-height: auto;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/*IPad, Surface Duo, Tablets...*/
+@media only screen and (min-width:540px) and (max-width:768px) {
+    main {
+        height: auto;
+        padding: 10% 0;
+    }
+
+    .card {
+        min-width: 500px;
+        min-height: auto;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
 }
