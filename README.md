@@ -74,6 +74,7 @@ I'd like to continue focus on getting better on my CSS, because there are a lot 
 - Rem Units
 - SASS
 - Bootstrap (HTML/CSS)
+
 Also I want to improve my JS skills that I plan on doing in my next projects.
 
 ### Useful resources
@@ -83,5 +84,4 @@ Also I want to improve my JS skills that I plan on doing in my next projects.
 
 ## Author
 
-- Website - [Pedro Lucas G.](NONE)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/plgomes03)
+- Frontend Mentor - [@plgomes03](https://www.frontendmentor.io/profile/plgomes03)
