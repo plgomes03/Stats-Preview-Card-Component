@@ -9,7 +9,7 @@ html {
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: border-box; /*padding and margin don't interfer on box size*/
 }
 
 body {
@@ -21,10 +21,10 @@ body {
 /*How to center using flexbox*/
 main {
     width: 100vw;
-    height: 100vh;
+    height: 100vh;/*100% of the viewport height*/
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;/*defines the alignment along the main axis*/
+    align-items: center; /*justify-content version for the cross-axis*/
 }
 
 .card {
@@ -63,6 +63,21 @@ span {
     }
 }
 
+
+/*Small screens*/
+@media only screen and (max-width:374px){
+    main {
+        height: auto;
+        padding: 5% 2%;
+    }
+
+    .card {
+        min-width: 300px;
+        min-height: auto;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
+}
 
 
 

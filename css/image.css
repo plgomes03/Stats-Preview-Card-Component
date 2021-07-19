@@ -1,13 +1,12 @@
 /*################# Desktop and laptops ##############################*/
 .image {
     width: 100%;
-    max-width: 540px;
     min-height: 446px;
     background-image: url(/images/image-header-desktop.jpg);
     background-size: cover;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    flex: 1 1 auto;
+    flex: 1 1 auto; /*shorthand for flex-grow, flex-shrink and flex-basis combined*/
 }
 
 
@@ -31,6 +30,18 @@
 }
 
 
+/*Small screens*/
+@media only screen and (max-width:374px) {
+    .image {
+        max-width: 374px;
+        min-height: 260px;
+        background-image: url(/images/image-header-mobile.jpg);
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 0;
+        flex: 1 1 auto;
+    }
+}
 
 
 
